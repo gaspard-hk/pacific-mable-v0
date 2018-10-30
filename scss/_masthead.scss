@@ -4,7 +4,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, 1)} 75%,$black 100%), url('../img/bg-masthead.jpg');
+  background: linear-gradient(to bottom, #{fade-out($black, .95)} 0%,#{fade-out($black, 1)} 95%,$black 100%), url('../img/bg-masthead.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -21,6 +21,10 @@
   h2 {
     max-width: 20rem;
     font-size: 1rem;
+  }
+  .logo-size{
+    width: 70%;
+    width: 70%;
   }
   @media(min-width: 768px) {
     h1 {
