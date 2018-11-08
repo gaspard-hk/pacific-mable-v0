@@ -88,10 +88,10 @@ function open_slider(item_num) {
 
       //theme options
 
-      theme_enable_fullscreen_button: true,	//show, hide the theme fullscreen button. The position in the theme is constant
-      theme_enable_play_button: true,			//show, hide the theme play button. The position in the theme is constant
-      theme_enable_hidepanel_button: true,	//show, hide the hidepanel button
-      theme_enable_text_panel: true,			//enable the panel text panel. 
+      theme_enable_fullscreen_button: false,	//show, hide the theme fullscreen button. The position in the theme is constant
+      theme_enable_play_button: false,			//show, hide the theme play button. The position in the theme is constant
+      theme_enable_hidepanel_button: false,	//show, hide the hidepanel button
+      theme_enable_text_panel: false,			//enable the panel text panel. 
 
       theme_text_padding_left: 20,			//left padding of the text in the textpanel
       theme_text_padding_right: 5,			//right paddin of the text in the textpanel
@@ -102,8 +102,8 @@ function open_slider(item_num) {
 
       // gallery options
 
-      gallery_width: 1600,							//gallery width		
-      gallery_height: 1200,							//gallery height
+      gallery_width: 1920,							//gallery width		
+      gallery_height: 1080,							//gallery height
 
       gallery_min_width: 300,						//gallery minimal width when resizing
       gallery_min_height: 200,					//gallery minimal height when resizing
@@ -115,15 +115,15 @@ function open_slider(item_num) {
       //visible - visible thumbs images will be loaded each time.
       //all - load all the images first time.
 
-      gallery_autoplay: false,						//true / false - begin slideshow autoplay on start
+      gallery_autoplay: true,						//true / false - begin slideshow autoplay on start
       gallery_play_interval: 3000,				//play interval of the slideshow
       gallery_pause_on_mouseover: true,			//true,false - pause on mouseover when playing slideshow true/false
 
       gallery_control_thumbs_mousewheel: false,	//true,false - enable / disable the mousewheel
-      gallery_control_keyboard: true,				//true,false - enable / disble keyboard controls
+      gallery_control_keyboard: false,				//true,false - enable / disble keyboard controls
       gallery_carousel: true,						//true,false - next button on last image goes to first image.
 
-      gallery_preserve_ratio: true,				//true, false - preserver ratio when on window resize
+      gallery_preserve_ratio: false,				//true, false - preserver ratio when on window resize
       gallery_debug_errors: true,					//show error message when there is some error on the gallery area.
       gallery_background_color: "",				//set custom background color. If not set it will be taken from css.
 
@@ -143,8 +143,8 @@ function open_slider(item_num) {
       slider_transition_speed: 300,				//transition duration of slide change
       slider_transition_easing: "easeInOutQuad",	//transition easing function of slide change
 
-      slider_control_swipe: true,					//true,false - enable swiping control
-      slider_control_zoom: true,					//true, false - enable zooming control
+      slider_control_swipe: false,					//true,false - enable swiping control
+      slider_control_zoom: false,					//true, false - enable zooming control
       slider_zoom_max_ratio: 6,					//max zoom ratio
       slider_loader_type: 1,						//shape of the loader (1-7)
       slider_loader_color: "white",				//color of the loader: (black , white)
@@ -188,21 +188,21 @@ function open_slider(item_num) {
       slider_progresspie_width: 30,				 //progess pie width
       slider_progresspie_height: 30,				 //progress pie height
 
-      slider_enable_play_button: true,			 //true,false - enable play / pause button onslider element
+      slider_enable_play_button: false,			 //true,false - enable play / pause button onslider element
       slider_play_button_skin: "",				 //skin of the slider play button, if empty inherit from gallery skin
       slider_play_button_align_hor: "left",    	 //left, center, right - play button horizontal align
       slider_play_button_align_vert: "top",         //top, middle, bottom - play button vertical align
       slider_play_button_offset_hor: 40,	       	 //play button horizontal offset 
       slider_play_button_offset_vert: 8,	   		 //play button vertical offset
 
-      slider_enable_fullscreen_button: true,		 //true,false - enable fullscreen button onslider element
+      slider_enable_fullscreen_button: false,		 //true,false - enable fullscreen button onslider element
       slider_fullscreen_button_skin: "",			 //skin of the slider fullscreen button, if empty inherit from gallery skin
       slider_fullscreen_button_align_hor: "left",   //left, center, right	- fullscreen button horizonatal align
       slider_fullscreen_button_align_vert: "top",   //top, middle, bottom - fullscreen button vertical align
       slider_fullscreen_button_offset_hor: 11,	     //fullscreen button horizontal offset 
       slider_fullscreen_button_offset_vert: 9,	   	 //fullscreen button vertical offset
 
-      slider_enable_zoom_panel: true,				 //true,false - enable the zoom buttons, works together with zoom control.
+      slider_enable_zoom_panel: false,				 //true,false - enable the zoom buttons, works together with zoom control.
       slider_zoompanel_skin: "",					 //skin of the slider zoom panel, if empty inherit from gallery skin		  
       slider_zoompanel_align_hor: "right",    		 //left, center, right - zoom panel horizontal align
       slider_zoompanel_align_vert: "top",     	 	 //top, middle, bottom - zoom panel vertical align
@@ -250,7 +250,7 @@ function open_slider(item_num) {
       //thumbs options
 
       thumb_width: 88,								//thumb width
-      thumb_height: 50,							//thumb height
+      thumb_height: 0,							//thumb height
       thumb_fixed_size: true,						//true,false - fixed/dynamic thumbnail width
 
       thumb_border_effect: true,					//true, false - specify if the thumb has border
@@ -274,7 +274,7 @@ function open_slider(item_num) {
       thumb_transition_duration: 200,				//thumb effect transition duration
       thumb_transition_easing: "easeOutQuad",		//thumb effect transition easing
 
-      thumb_show_loader: true,						//show thumb loader while loading the thumb
+      thumb_show_loader: false,						//show thumb loader while loading the thumb
       thumb_loader_type: "dark",					//dark, light - thumb loader type
 
       //stript thumbs panel options
@@ -291,7 +291,7 @@ function open_slider(item_num) {
 
       strippanel_buttons_role: "scroll_strip",   // scroll_strip, advance_item - the role of the side buttons
 
-      strippanel_enable_handle: true,				//enable grid handle			
+      strippanel_enable_handle: false,				//enable grid handle			
       strippanel_handle_align: "top",				//top, middle, bottom , left, right, center - close handle tip align on the handle bar according panel orientation
       strippanel_handle_offset: 0,				//offset of handle bar according the valign
       strippanel_handle_skin: "",					//skin of the handle, if empty inherit from gallery skin
@@ -303,8 +303,8 @@ function open_slider(item_num) {
       strip_thumb_touch_sensetivity: 15,  			//from 1-100, 1 - most sensetive, 100 - most unsensetive
       strip_scroll_to_thumb_duration: 500,			//duration of scrolling to thumb
       strip_scroll_to_thumb_easing: "easeOutCubic", //easing of scrolling to thumb animation
-      strip_control_avia: true,					//avia control - move the strip according strip moseover position
-      strip_control_touch: true,					//touch control - move the strip by dragging it
+      strip_control_avia: false,					//avia control - move the strip according strip moseover position
+      strip_control_touch: false,					//touch control - move the strip by dragging it
 
 
     });		
@@ -327,7 +327,7 @@ function open_slider(item_num) {
 					// gallery options
 				
 			//gallery_width: "100%",							//gallery width		
-      //gallery_height: 1200,							//gallery height
+      //gallery_height: 1000,							//gallery height
 
       gallery_min_width: 300,						//gallery minimal width when resizing
       gallery_min_height: 200,					//gallery minimal height when resizing
