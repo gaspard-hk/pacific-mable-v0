@@ -70,7 +70,7 @@ function open_slider(item_num) {
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
+    if ($("#mainNav").offset().top > -1) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
@@ -103,7 +103,7 @@ function open_slider(item_num) {
       // gallery options
 
       gallery_width: 1920,							//gallery width		
-      gallery_height: 1080,							//gallery height
+      gallery_height: 1000,							//gallery height
 
       gallery_min_width: 300,						//gallery minimal width when resizing
       gallery_min_height: 200,					//gallery minimal height when resizing
@@ -279,8 +279,8 @@ function open_slider(item_num) {
 
       //stript thumbs panel options
 
-      strippanel_padding_top: 8,					//space from top of the panel
-      strippanel_padding_bottom: 8,				//space from bottom of the panel
+      strippanel_padding_top: 0,					//space from top of the panel
+      strippanel_padding_bottom: 0,				//space from bottom of the panel
 
       strippanel_padding_left: 0,				//space from left of the panel
       strippanel_padding_right: 0,				//space from right of the panel
@@ -326,8 +326,8 @@ function open_slider(item_num) {
 
 					// gallery options
 				
-			//gallery_width: "100%",							//gallery width		
-      //gallery_height: 1000,							//gallery height
+			gallery_width: 1600,							//gallery width		
+      gallery_height: 1000,							//gallery height
 
       gallery_min_width: 300,						//gallery minimal width when resizing
       gallery_min_height: 200,					//gallery minimal height when resizing

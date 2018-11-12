@@ -1,4 +1,4 @@
-.about-section {
+.client-section {
   padding-top: 10rem;
   background: #eeeeee;
   p {
@@ -6,30 +6,34 @@
   }
 }
 
-.about-top-padding{
+.client-top-padding{
   padding-top: 50px;
 }
 
-.about-bottom-padding{
+.client-bottom-padding{
   padding-bottom: 50px;
 }
 
+.client-row{
+  height: 150px;
+}
+
 @media(min-width:768px){
-  .about-top-padding{
+  .client-top-padding{
     padding-top: 50px;
   }
 
-  .about-bottom-padding{
+  .client-bottom-padding{
     padding-bottom: 50px;
   }
 }
 
 @media(min-width:992px){
-  .about-top-padding{
+  .client-top-padding{
     padding-top: 50px;
   }
 
-  .about-bottom-padding{
+  .client-bottom-padding{
     padding-bottom: 50px;
   }
 }
