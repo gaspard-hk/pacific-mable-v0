@@ -69,6 +69,7 @@ function open_slider(item_num) {
   });
 
   // Collapse Navbar
+  /*
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > -1) {
       $("#mainNav").addClass("navbar-shrink");
@@ -80,6 +81,9 @@ function open_slider(item_num) {
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+  */
+
+  $("#mainNav").addClass("navbar-shrink");
 
 
 
