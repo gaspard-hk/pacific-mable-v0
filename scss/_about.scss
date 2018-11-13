@@ -23,23 +23,6 @@
     padding-bottom: 50px;
   }
 }
-@supports (-ms-ime-align:auto){
-  @media(min-width:992px) {
-    .about-top-padding{
-      padding-top: 150px;
-    }
-
-    .about-bottom-padding{
-      padding-bottom: 50px;
-    }
-  }
-}
-
-@media(min-width:992px) {
-  _:-ms-lang(x), _:-webkit-full-screen, .about-top-padding { 
-    padding-top: 150px;
-  }
-}
 
 @media(min-width:992px) {
   .about-top-padding { 

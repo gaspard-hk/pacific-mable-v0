@@ -122,7 +122,7 @@
     <section id="about" class="about-section text-center">
       <div class="container">
         <div class="row bg-mid-gray">
-          <div class="col-lg-8 mx-auto about-top-padding">
+          <div class="col-lg-12 mx-auto about-top-padding">
           </div>
         </div>
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0 bg-white padding-20">
@@ -593,28 +593,28 @@
         <div class="col-lg-12 mx-auto" >
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-          <form name="sentMessage" id="contactForm" novalidate="novalidate">
+          <form name="sentMessage" id="contactForm" novalidate="novalidate" action="mail/contact_me.php" method="POST">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <input class="form-control" id="name" type="text" placeholder="名字" required="required" data-validation-required-message="請輸入你的名字">
+                <input class="form-control" name="name" id="name" type="text" placeholder="名字" required="required" data-validation-required-message="請輸入你的名字">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <input class="form-control" id="email" type="email" placeholder="電郵地址" required="required" data-validation-required-message="請輸入你的電郵地址">
+                <input class="form-control" name="email" id="email" type="email" placeholder="電郵地址" required="required" data-validation-required-message="請輸入你的電郵地址">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <input class="form-control" id="phone" type="tel" placeholder="電話號碼" required="required" data-validation-required-message="請輸入你的電話號碼">
+                <input class="form-control" name="phone" id="phone" type="tel" placeholder="電話號碼" required="required" data-validation-required-message="請輸入你的電話號碼">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <textarea class="form-control" id="message" rows="5" placeholder="訊息" required="required" data-validation-required-message="請輸入你的訊息"></textarea>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="訊息" required="required" data-validation-required-message="請輸入你的訊息"></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -684,6 +684,30 @@
         </div>
       </div>
     </div>
+
+    <!-- Maail Modal 1 -->
+    <div class="mail-modal" id="mail-modal-1">
+      <div class="mail-modal-dialog bg-white">
+        <div class=" text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <h2 class="text-secondary text-uppercase mb-0" id="mail_message"></h2>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <a class="btn btn-primary btn-lg rounded-pill mail-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                確定</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
 
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">

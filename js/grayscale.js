@@ -32,6 +32,55 @@ function open_slider(item_num) {
     }
   });
 
+  $('#contactForm').submit(function(event){
+    
+    if ($.trim($('#name').val()) == "" ) {
+      $('#mail_message').html('請填妥姓名');
+      $.magnificPopup.open({ items: { src: '#mail-modal-1' }, type: 'inline' }, 0);
+      event.preventDefault();
+      return;
+    }
+    if ($.trim($('#email').val()) == "") {
+      $('#mail_message').html('請填妥電郵');
+      $.magnificPopup.open({ items: { src: '#mail-modal-1' }, type: 'inline' }, 0);
+      event.preventDefault();
+      return;
+    }
+    if ($.trim($('#message').val()) == "") {
+      $('#mail_message').html('請填寫內容');
+      $.magnificPopup.open({ items: { src: '#mail-modal-1' }, type: 'inline' }, 0);
+      event.preventDefault();
+      return;
+    }
+
+
+    $.ajax({
+      type: "POST",
+      url: $('#contactForm').attr('action'),
+      data: {
+        'name': $('#name').val(),
+        'email': $('#email').val(),
+        'phone': $('#phone').val(),
+        'message': $('#message').val()
+      },
+      success: function(result){
+        console.log(result);
+        if ($.trim(result) == "success"){
+          $('#mail_message').html('電郵發送成功');
+          $('#name').val('');
+          $('#email').val('');
+          $('#phone').val('');
+          $('#message').val('');
+          $.magnificPopup.open({ items: { src: '#mail-modal-1' }, type: 'inline' }, 0);
+        }else{
+          $('#mail_message').html('電郵發送失敗，請再嘗試');
+          $.magnificPopup.open({ items: { src: '#mail-modal-1' }, type: 'inline' }, 0);
+        }
+      }
+    });
+    event.preventDefault();
+  });
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
@@ -67,6 +116,13 @@ function open_slider(item_num) {
     e.preventDefault();
     $.magnificPopup.close();
   });
+
+  $(document).on('click', '.mail-modal-dismiss', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+
+
 
   // Collapse Navbar
   /*
@@ -537,5 +593,6 @@ function open_slider(item_num) {
 
     });
     $('#portfolio-modal-1').addClass('mfp-hide');
+    $('#mail-modal-1').addClass('mfp-hide');
   });
 })(jQuery); // End of use strict
