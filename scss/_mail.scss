@@ -1,5 +1,14 @@
 .mail-modal {
   .mail-modal-dialog {
+    min-height: 50vh;
+    padding: 3rem;
+    margin: 3rem calc(3rem - 8px);
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  /*
+  .mail-modal-dialog {
     padding: 3rem 1rem;
     min-height: calc(100vh - 2rem);
     margin: 1rem calc(1rem - 8px);
@@ -8,26 +17,12 @@
     -moz-box-shadow: 0 0 3rem 1rem fade-out(black, .5);
     -webkit-box-shadow: 0 0 3rem 1rem fade-out(black, .5);
     box-shadow: 0 0 3rem 1rem fade-out(black, .5);
-    .close-button {
-      position: absolute;
-      top: 2rem;
-      right: 2rem;
-      i {
-        line-height: 38px;
-      }
-    }
     h2 {
       font-size: 2rem;
     }
   }
   @media(min-width: 768px) {
-    .mail-modal-dialog {
-      min-height: 50vh;
-      padding: 3rem;
-      margin: 3rem calc(3rem - 8px);
-      h2 {
-        font-size: 3rem;
-      }
-    }
+
   }
+  */
 }
