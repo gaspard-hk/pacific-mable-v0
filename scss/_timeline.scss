@@ -150,10 +150,15 @@
       .timeline-inverted-align-direction{
         text-align: right;
       }
+      .timeline-inverted-ol{
+        display: inline-block;
+        text-align: left;
+        padding-right: 5px;
+      }
       .timeline-inverted-content{
         display: inline-block;
         text-align: right;
-        padding-left: 10px;
+        padding-left: 0px;
       }
       &.timeline-inverted > .timeline-panel {
         float: right;
