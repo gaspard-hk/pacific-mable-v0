@@ -35,19 +35,34 @@ function open_slider(item_num) {
   $('#contactForm').submit(function(event){
     
     if ($.trim($('#name').val()) == "" ) {
-      $('#mail_message').html('請填妥姓名');
+      var name_err_message = {
+        'zh': '請填妥姓名',
+        'cn': '请填妥姓名',
+        'en': 'Please fill in the name',
+      }
+      $('#mail_message').html(name_err_message[$('#language').val()]);
       $.magnificPopup.open({ items: { src: '#mail-modal-1' }, type: 'inline' }, 0);
       event.preventDefault();
       return;
     }
     if ($.trim($('#email').val()) == "") {
-      $('#mail_message').html('請填妥電郵');
+      var email_err_message = {
+        'zh': '請填妥電郵',
+        'cn': '请填妥电邮',
+        'en': 'Please fill in the email',
+      }
+      $('#mail_message').html(email_err_message[$('#language').val()]);
       $.magnificPopup.open({ items: { src: '#mail-modal-1' }, type: 'inline' }, 0);
       event.preventDefault();
       return;
     }
     if ($.trim($('#message').val()) == "") {
-      $('#mail_message').html('請填寫內容');
+      var message_err_message = {
+        'zh': '請填寫內容',
+        'cn': '请填写内容',
+        'en': 'Please fill in the message',
+      }
+      $('#mail_message').html(message_err_message[$('#language').val()]);
       $.magnificPopup.open({ items: { src: '#mail-modal-1' }, type: 'inline' }, 0);
       event.preventDefault();
       return;
