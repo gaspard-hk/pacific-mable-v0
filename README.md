@@ -4,7 +4,7 @@ This page is forked from a bootstrap template - grayscale (http://startbootstrap
 
 ## Preview
 
-[![Grayscale Preview](https://gaspard-hk.github.io/pmg/pmg-preview.jpg)](http://www.pacific-marble.com)
+[![Grayscale Preview](https://gaspard-hk.github.io/pmg/pmg-preview.png)](http://www.pacific-marble.com)
 
 ## About
 
